@@ -188,7 +188,7 @@ function DestinationList() {
   const [destinations, setDestinations] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/api/destinations/")
+    axios.get("http://localhost:8000/api/destinations/",'safe-tourism-fullstack-4.onrender.com/api/desinations/')
       .then(res => setDestinations(res.data))
       .catch(err => console.error(err));
   }, []);

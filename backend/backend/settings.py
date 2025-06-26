@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-)#o5&^d04v5m&avqnw1rh**1)1=l0&a&q1vck2$ig-+z6wg!#=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['safe-tourism-fullstack-4.onrender.com', 'localhost', '127.0.0.1']
 
 
@@ -145,6 +146,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React default port
+    "https://safe-tourism-frontend.onrender.com",
 ]
 
 
